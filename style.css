@@ -145,6 +145,7 @@ body{
 
 .container{
    width: 1240px;
+   height: 100%;
    padding: 3em 1em;
    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
    border-radius: 10px;
@@ -273,17 +274,17 @@ main .card .profile span{
 
 main .card-1{
    position: relative;
-   bottom: 40px;
+   top: 20px;
 }
 
 main .card-2{
    position: relative;
-   bottom: 20px;
+   top: 50px;
 }
 
 main .card-3{
    position: relative;
-   bottom: -10px;
+   top: 70px;
 }
 
 
