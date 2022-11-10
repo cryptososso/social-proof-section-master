@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'League Spartan', sans-serif;
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+.container{
+   width: 475px;
+   min-height: 100vh;
+   margin: 15px;
+   padding: 1.2em;
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1em;
+}
+
+header .text h1{
+   font-size: 2.8em;
+   line-height: 1;
+   text-align: center;
+   margin-top: 30px;
+   color: hsl(333, 68%, 33%);
+   font-weight: 700;
+   margin-bottom: 0.5em;
+}
+
+
+header .text p{
+   font-size: 1.2em;
+   font-weight: 400;
+   padding: 1.3rem;
+   text-align: center;
+}
+
+header .review{
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   margin-left: 5px;
+}
+
+header .review .review-bg{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   background-color: hsl(333, 79%, 89%);
+   margin-bottom: 1em;
+   padding: 15px 20px;
+   border-radius: 10px;
+}
+
+header .review p{
+   margin-left: 2em;
+   font-size: 15px;
+   color: hsl(333, 68%, 33%);
+   font-weight: 700;
+}
+
+main{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   margin: 0 auto;
+}
+
+main .card{
+   background-color: hsl(300, 43%, 22%);
+   color: #fff;
+   width: 100%;
+   height: 290px;
+   padding: 25px 20px;
+   margin: 20px;
+   border-radius: 15px;
+}
+
+main .card .profile{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+main .card p{
+   font-size: 18px;
+}
+
+main .card .profile img{
+   width: 70px;
+   height: 70px;
+   border-radius: 50px;
+   margin-right: 10px;
+}
+
+main .card .profile-title{
+   display: flex;
+   flex-direction: column;
+   line-height: 1.2;
+}
+
+main .card .profile span{
+   color: hsl(300, 67%, 72%);
+   font-weight: 700;
+   margin-top: 0;
+}
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1995px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+body{
+   display: flex;
+   height: 100vh;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-family: 'League Spartan', sans-serif;
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+.container{
+   width: 1240px;
+   padding: 3em 1em;
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   border-radius: 10px;
+}
+
+header{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   background-image: url('./images/bg-pattern-top-desktop.svg');
+}
+
+header .text{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 5em;
+}
+
+header .text h1{
+   font-size: 2.8em;
+   line-height: 1;
+   color: hsl(333, 68%, 33%);
+   font-weight: 700;
+   margin-bottom: 0.5em;
+}
+
+header .text p{
+   font-size: 1em;
+   font-weight: 400;
+}
+
+header .review{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   margin-right: 2em;
+}
+
+header .review .review-bg{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   background-color: hsl(333, 79%, 89%);
+   margin-bottom: 1em;
+   padding: 15px 25px;
+   border-radius: 10px;
+}
+
+header .review p{
+   margin-left: 2em;
+   color: hsl(333, 68%, 33%);
+   font-weight: 700;
+}
+
+header .review .review-1{
+   position: relative;
+   align-self: flex-start;
+}
+
+header .review .review-2{
+   position: relative;
+   align-self: center;
+}
+
+header .review .review-3{
+   position: relative;
+   align-self: flex-end;
+}
+
+main{
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   margin: 0 auto;
+   background-image: url('./images/bg-pattern-bottom-desktop.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+main .card{
+   background-color: hsl(300, 43%, 22%);
+   color: #fff;
+   width: 350px;
+   height: 270px;
+   padding: 30px 25px;
+   margin: 20px;
+   border-radius: 15px;
+}
+
+main .card .profile{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+main .card p{
+   font-size: 18px;
+}
+
+main .card .profile img{
+   width: 60px;
+   height: 60px;
+   border-radius: 50px;
+   margin-right: 10px;
+}
+
+main .card .profile-title{
+   display: flex;
+   flex-direction: column;
+   line-height: 1.2;
+}
+
+main .card .profile span{
+   color: hsl(300, 67%, 72%);
+   font-weight: 700;
+   margin-top: 0;
+}
+
+main .card-1{
+   position: relative;
+   bottom: 40px;
+}
+
+main .card-2{
+   position: relative;
+   bottom: 20px;
+}
+
+main .card-3{
+   position: relative;
+   bottom: -10px;
+}
+
+
+.attribution {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
+}
+
+.attribution a {
+        color: hsl(228, 45%, 44%);
+}
+
+
+}
