@@ -19,8 +19,11 @@ body{
 
 .container{
    width: 475px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    min-height: 100vh;
-   margin: 15px;
    padding: 1.2em;
    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -45,32 +48,35 @@ header .text h1{
 
 
 header .text p{
+   width: 375px;
    font-size: 1.2em;
    font-weight: 400;
    padding: 1.3rem;
    text-align: center;
+   margin: 0 auto;
 }
 
 header .review{
-   width: 90%;
    display: flex;
    flex-direction: column;
+   align-items: center;
+   justify-content: center;
    position: relative;
-   margin-left: 5px;
 }
 
 header .review .review-bg{
+   width: 350px;
    display: flex;
    flex-direction: row;
    align-items: center;
    background-color: hsl(333, 79%, 89%);
+   padding: 10px;
    margin-bottom: 1em;
-   padding: 15px 20px;
    border-radius: 10px;
 }
 
 header .review p{
-   margin-left: 2em;
+   margin-left: 0.8em;
    font-size: 15px;
    color: hsl(333, 68%, 33%);
    font-weight: 700;
@@ -89,9 +95,9 @@ main{
 main .card{
    background-color: hsl(300, 43%, 22%);
    color: #fff;
-   width: 100%;
-   height: 290px;
-   padding: 25px 20px;
+   width: 330px;
+   height: 250px;
+   padding: 15px 15px;
    margin: 20px;
    border-radius: 15px;
 }
@@ -127,6 +133,17 @@ main .card .profile span{
 }
 
 
+.attribution {
+   font-size: 15px;
+   text-align: center;
+   margin-top: 15px;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
+
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1995px) 
@@ -134,7 +151,7 @@ main .card .profile span{
 
 body{
    display: flex;
-   height: 100vh;
+   min-height: 100vh;
    flex-direction: column;
    align-items: center;
    justify-content: center;
@@ -145,7 +162,7 @@ body{
 
 .container{
    width: 1240px;
-   height: 100%;
+   min-height: 100%;
    padding: 3em 1em;
    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
    border-radius: 10px;
@@ -160,11 +177,11 @@ header{
 }
 
 header .text{
-   width: 40%;
+   width: 475px;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   margin-left: 5em;
+   left: 0;
 }
 
 header .text h1{
@@ -181,11 +198,11 @@ header .text p{
 }
 
 header .review{
-   width: 40%;
+   width: 475px;
    display: flex;
    flex-direction: column;
    position: relative;
-   margin-right: 2em;
+   margin-left: 2em;
 }
 
 header .review .review-bg{
@@ -194,7 +211,6 @@ header .review .review-bg{
    align-items: center;
    background-color: hsl(333, 79%, 89%);
    margin-bottom: 1em;
-   padding: 15px 25px;
    border-radius: 10px;
 }
 
@@ -225,7 +241,7 @@ main{
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
-   width: 90%;
+   width: 80%;
    margin: 0 auto;
    background-image: url('./images/bg-pattern-bottom-desktop.svg');
    background-repeat: no-repeat;
@@ -236,7 +252,7 @@ main .card{
    background-color: hsl(300, 43%, 22%);
    color: #fff;
    width: 350px;
-   height: 270px;
+   height: 280px;
    padding: 30px 25px;
    margin: 20px;
    border-radius: 15px;
@@ -250,7 +266,7 @@ main .card .profile{
 }
 
 main .card p{
-   font-size: 18px;
+   font-size: 15px;
 }
 
 main .card .profile img{
@@ -274,17 +290,17 @@ main .card .profile span{
 
 main .card-1{
    position: relative;
-   top: 20px;
+   top: 15px;
 }
 
 main .card-2{
    position: relative;
-   top: 50px;
+   top: 30px;
 }
 
 main .card-3{
    position: relative;
-   top: 70px;
+   top: 50px;
 }
 
 
